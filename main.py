@@ -48,8 +48,10 @@ david.add_exercise(stocks_report)
 zane.add_exercise(mushroom_picker)
 zane.add_exercise(stocks_report)
 
+
 students = list()
 exercises = list()
+
 students.append(stephen)
 students.append(davis)
 students.append(sarah)
@@ -63,7 +65,13 @@ exercises.append(mushroom_picker)
 exercises.append(star_wars)
 
 
-
-
+def student_report():
+  for student in students:
+    assigned_exercises = []
+    for exercise in student.exercise:
+      assigned_exercises.append(exercise.name)
+    print(f'{student.first_name} is working on {" and ".join(assigned_exercises)}')
+  
+student_report()
 
 

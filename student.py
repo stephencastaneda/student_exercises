@@ -10,7 +10,7 @@ class Student:
     self.cohort.append(cohort)
   
   def add_exercise(self, exercise):
-    self.cohort.append(exercise)
+    self.exercise.append(exercise)
 
   def __str__(self):
     return f"{self.first_name} is in {self.cohort}"
